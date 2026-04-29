@@ -12,8 +12,8 @@
   --color-bg: #fdf5ed;
   --color-text: #3a3530;
   --color-muted: #6b6259;
-  --color-accent: #6b6259;
-  --color-accent-light: #faeee2;
+  --color-subtle: #faeee2;
+  --color-border: #e8d5c4;
   --color-link: #5a4f43;
   --font-body: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
   --max-width: 36rem;
@@ -23,7 +23,6 @@
   * { transition: none !important; }
 }
 
-/* Skip link */
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -48,19 +47,17 @@ body {
   margin: 0 auto;
 }
 
-/* Header */
 header {
   text-align: center;
   margin-bottom: 3rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid #e8d5c4;
+  border-bottom: 1px solid var(--color-border);
 }
 
 h1 {
   font-size: 2.4rem;
   font-weight: normal;
   letter-spacing: 0.2em;
-  color: var(--color-text);
 }
 
 .subtitle {
@@ -70,7 +67,6 @@ h1 {
   letter-spacing: 0.08em;
 }
 
-/* Sections */
 section {
   margin-bottom: 2.5rem;
 }
@@ -83,26 +79,23 @@ h2 {
   margin-bottom: 0.8rem;
 }
 
-/* Blockquote / motto */
 blockquote {
   font-style: italic;
   font-size: 1.25rem;
   text-align: center;
   color: var(--color-muted);
   padding: 1.5rem;
-  background: var(--color-accent-light);
+  background: var(--color-subtle);
   border-radius: 2px;
 }
 
-/* List */
 ul {
   list-style: none;
   padding: 0;
 }
 
 li {
-  padding: 0.4rem 0;
-  padding-left: 1.2rem;
+  padding: 0.4rem 0 0.4rem 1.2rem;
   position: relative;
 }
 
@@ -113,7 +106,6 @@ li::before {
   color: var(--color-muted);
 }
 
-/* Contact */
 address {
   font-style: normal;
   margin: 0.5rem 0;
@@ -135,11 +127,10 @@ a:focus-visible {
   outline-offset: 2px;
 }
 
-/* Footer */
 footer {
   margin-top: 3rem;
   padding-top: 1.5rem;
-  border-top: 1px solid #e8d5c4;
+  border-top: 1px solid var(--color-border);
   text-align: center;
   font-size: 0.9rem;
   color: var(--color-muted);
