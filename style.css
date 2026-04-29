@@ -45,6 +45,8 @@ body {
   padding: 3rem 1.5rem;
   max-width: var(--max-width);
   margin: 0 auto;
+  text-align: justify;
+  hyphens: auto;
 }
 
 header {
