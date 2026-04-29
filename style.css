@@ -1,0 +1,144 @@
+/* LeLiLa – calm, accessible, minimal */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg: #f7f5f0;
+  --color-text: #2c2c2c;
+  --color-muted: #5a5a5a;
+  --color-accent: #4a7c6f;
+  --color-accent-light: #e8f0ec;
+  --color-link: #3a6b5e;
+  --font-body: Georgia, "Times New Roman", serif;
+  --max-width: 38rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--color-accent);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  z-index: 100;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  background: var(--color-bg);
+  padding: 2rem 1.5rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: normal;
+  letter-spacing: 0.15em;
+  color: var(--color-accent);
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--color-muted);
+  margin-top: 0.3rem;
+}
+
+/* Sections */
+section {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: var(--color-accent);
+  margin-bottom: 0.8rem;
+}
+
+/* Blockquote / motto */
+blockquote {
+  font-style: italic;
+  font-size: 1.3rem;
+  text-align: center;
+  color: var(--color-muted);
+  padding: 1.5rem;
+  background: var(--color-accent-light);
+  border-radius: 4px;
+}
+
+/* List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 0.4rem 0;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+}
+
+/* Contact */
+address {
+  font-style: normal;
+  margin: 0.5rem 0;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-accent);
+}
+
+a:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ddd;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
