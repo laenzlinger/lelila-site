@@ -9,11 +9,11 @@
 }
 
 :root {
-  --color-bg: #f5f0e8;
+  --color-bg: #fdf5ed;
   --color-text: #3a3530;
   --color-muted: #6b6259;
   --color-accent: #6b6259;
-  --color-accent-light: #ece6da;
+  --color-accent-light: #faeee2;
   --color-link: #5a4f43;
   --font-body: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
   --max-width: 36rem;
@@ -53,7 +53,7 @@ header {
   text-align: center;
   margin-bottom: 3rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid #d5cdbf;
+  border-bottom: 1px solid #e8d5c4;
 }
 
 h1 {
@@ -139,7 +139,7 @@ a:focus-visible {
 footer {
   margin-top: 3rem;
   padding-top: 1.5rem;
-  border-top: 1px solid #d5cdbf;
+  border-top: 1px solid #e8d5c4;
   text-align: center;
   font-size: 0.9rem;
   color: var(--color-muted);
